@@ -1,13 +1,11 @@
 .App {
-  text-align: center;
+  padding: 0 0 40px 40px;
+  box-sizing: border-box;
 }
 .App-header {
-  background-color: #282c34;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -60,6 +58,53 @@ header p {
   letter-spacing: .02em;
   font-weight: bold;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 500px;
+  padding: 20px;
+  background-color: #0a0313;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 20px 0px;
+
+}
+
+label {
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+input {
+  height: 28px;
+}
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 4px 0px 20px 0px;
+  border-radius: 4px;
+  border: 0px;
+  padding: 8px;
+}
+
+input[type=submit] {
+  background-color: #791d83;
+  padding: 8px;
+  width: 100px;
+  border: 0px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #310d35;
+  cursor: pointer;
+}
 /*******************************************
 Containers
 ******************************************/
@@ -80,7 +125,7 @@ Containers
   flex-direction: column;
 }
 
-.project {
+li {
   
   margin: 20px 20px 0 0;
   width: 500px;
@@ -98,18 +143,18 @@ Containers
   transition: background-color 0.8s ease, width 0.5s ease, min-height 0.5s ease;
 }
 
-.project:hover {
+li:hover {
   background-color: #00000000;
   width: 600px;
   min-height: 200px;
 }
 
-.project:nth-child(1) {
+li:nth-child(1) {
   background-image: url("images/project1.png");
 }
-.project:nth-child(2) {
+li:nth-child(2) {
   background-image: url("images/project2.png");
 }
-.project:nth-child(3) {
+li:nth-child(3) {
   background-image: url("images/project3.png");
 }
