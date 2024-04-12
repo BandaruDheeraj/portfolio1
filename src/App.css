@@ -11,3 +11,105 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+body {
+  font-family: 'Segoe ui', Arial, sans-serif;
+  background-color: #f8f9fa;
+  background-image: url("images/background-7.png");
+  background-size: cover;
+  background-color: #f8f9fa;
+  color: #FFFFFF;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*******************************************
+Tag Styles
+******************************************/
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 90%;
+  max-width: 600px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+header p {
+  margin-block-start: 4px;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+.project p {
+  color: #FFFFFF;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+  margin: 0;
+  letter-spacing: .02em;
+  font-weight: bold;
+}
+/*******************************************
+Containers
+******************************************/
+.App {
+  overflow: hidden;
+}
+
+.header {
+  padding: 0px 40px;    
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.content {
+  margin: 10px 40px;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  
+  margin: 20px 20px 0 0;
+  width: 500px;
+  min-height: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  /*box-shadow: 0px 2px 4px rgba(206, 206, 206, 0.4);*/
+  background-color: #00000090;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position:center;
+  flex-direction: column;
+  transition: background-color 0.8s ease, width 0.5s ease, min-height 0.5s ease;
+}
+
+.project:hover {
+  background-color: #00000000;
+  width: 600px;
+  min-height: 200px;
+}
+
+.project:nth-child(1) {
+  background-image: url("images/project1.png");
+}
+.project:nth-child(2) {
+  background-image: url("images/project2.png");
+}
+.project:nth-child(3) {
+  background-image: url("images/project3.png");
+}
