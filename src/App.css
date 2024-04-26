@@ -1,13 +1,10 @@
-.App {
-  text-align: center;
-}
-.App-header {
-  background-color: #282c34;
+/******************************************
+   Tag Styles
+*******************************************/
+header {
   min-height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -23,14 +20,62 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-/*******************************************
-Tag Styles
-******************************************/
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  padding: none;
+  margin: 20px 0 ;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #00000070;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+label {
+  width: 100%;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+
+input {
+  height: 28px;
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  width: auto;
+  background-color: #b727c0;
+  color: #FFFFFF;
+  border: none;
+  margin: 20px 0;
+  height: 32px;
+  border-radius: 4px;
+}
+
+
 
 h1 {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-size: 80px;
   font-weight: 800;
   line-height: 90%;
@@ -38,9 +83,9 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
-  color: #FFFFFF;
+  color: #f168fc;
   font-size: 1.7em;
   font-weight: 800;
 }
@@ -51,14 +96,13 @@ header p {
   font-weight: 800;
 }
 
-.project p {
+p {
   color: #FFFFFF;
   font-size: 1em;
   margin: 0px;
   padding: 0px;
   margin: 0;
   letter-spacing: .02em;
-  font-weight: bold;
 }
 /*******************************************
 Containers
@@ -81,7 +125,6 @@ Containers
 }
 
 .project {
-  
   margin: 20px 20px 0 0;
   width: 500px;
   min-height: 150px;
@@ -98,18 +141,18 @@ Containers
   transition: background-color 0.8s ease, width 0.5s ease, min-height 0.5s ease;
 }
 
-.project:hover {
+.content > :hover {
   background-color: #00000000;
   width: 600px;
   min-height: 200px;
 }
 
-.project:nth-child(1) {
+.section > :nth-child(1) {
   background-image: url("images/project1.png");
 }
-.project:nth-child(2) {
+.content > :nth-child(2) {
   background-image: url("images/project2.png");
 }
-.project:nth-child(3) {
+.content > :nth-child(3) {
   background-image: url("images/project3.png");
 }
