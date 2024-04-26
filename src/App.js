@@ -13,52 +13,43 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My Portfolio</h1>
+      <header>
+        <h1>Your Name</h1>
+        <p>Introduction about yourself goes here.</p>
       </header>
-      <main>
-        <section>
-          <h2>About Me</h2>
-          <p>This is a paragraph about me and my background.</p>
-        </section>
-        <section>
-          <h2>My Projects</h2>
-          <ul>
-            <li>
-              <h3>Project 1</h3>
-              <p>Description of Project 1.</p>
-            </li>
-            <li>
-              <h3>Project 2</h3>
-              <p>Description of Project 2.</p>
-            </li>
-          </ul>
-        </section>
-        <div className="contact-form">
-              <h2>Contact Me</h2>
-              <form action="http://localhost:5000/contact" method="post">
-                <label>
-                  Name:
-                  <input type="text" name="name" required />
-                </label>
-                <label>
-                  Email:
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Message:
-                  <textarea name="message" required></textarea>
-                </label>
-                <input type="submit" value="Submit" />
-              </form>
-        </div>
-        <div>{data}</div>
-        {/* <section>
-          <h2>Contact Me</h2>
-          <p>You can reach me at myemail@example.com</p>
-        </section> */}
 
-      </main>
+      {/* Second Section */}
+      <section>
+        <div>
+          <h2>Projects</h2>
+          <p>Description of your projects.</p>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <p>List of your skills.</p>
+        </div>
+        <div>
+          <h2>Experience</h2>
+          <p>Details about your work experience.</p>
+        </div>
+      </section>
+
+      {/* Third Section (Contact Form) */}
+      <section>
+        <h2>Contact Me</h2>
+        <form>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" />
+
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" />
+
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </div>
   );
 }

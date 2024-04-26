@@ -1,13 +1,6 @@
 /******************************************
    Tag Styles
 *******************************************/
-header {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 body {
   font-family: 'Segoe ui', Arial, sans-serif;
@@ -24,16 +17,14 @@ body {
   box-sizing: border-box;
 }
 
-ul {
-  padding: 0px;
-  margin: 0px;
+.App > *:first-child {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-li {
-  list-style: none;
-  padding: none;
-  margin: 20px 0 ;
-}
 
 form {
   width: 400px;
@@ -42,6 +33,7 @@ form {
   background-color: #00000070;
   padding: 20px;
   border-radius: 4px;
+  margin-bottom: 60px;
 }
 
 label {
@@ -62,7 +54,7 @@ input {
   margin: 10px 0;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
   width: auto;
   background-color: #b727c0;
   color: #FFFFFF;
@@ -71,8 +63,6 @@ input[type="submit"] {
   height: 32px;
   border-radius: 4px;
 }
-
-
 
 h1 {
   margin: 0 0 20px 0;
@@ -86,13 +76,13 @@ h2 {
   margin: 10px 0;
   padding: 0;
   color: #f168fc;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 800;
 }
 
 header p {
   margin-block-start: 4px;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 800;
 }
 
@@ -103,6 +93,7 @@ p {
   padding: 0px;
   margin: 0;
   letter-spacing: .02em;
+  line-height: 7%;
 }
 /*******************************************
 Containers
@@ -117,42 +108,34 @@ Containers
   overflow: hidden;
 }
 
-.content {
-  margin: 10px 40px;
-  max-width: 1024px;
-  display: flex;
-  flex-direction: column;
-}
 
-.project {
-  margin: 20px 20px 0 0;
-  width: 500px;
-  min-height: 150px;
-  overflow: hidden;
-  box-sizing: border-box;
+.App > :nth-child(2) > * {
+  width: 400px;
   padding: 20px;
-  border-radius: 10px;
-  /*box-shadow: 0px 2px 4px rgba(206, 206, 206, 0.4);*/
+  min-height: 90px;
   background-color: #00000090;
   background-blend-mode: overlay;
   background-size: cover;
   background-position:center;
-  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 8px;
   transition: background-color 0.8s ease, width 0.5s ease, min-height 0.5s ease;
 }
 
-.content > :hover {
-  background-color: #00000000;
-  width: 600px;
-  min-height: 200px;
+.App> :nth-child(2) > *:hover   {
+  width: 450px;
+  min-height: 110px;
+  cursor: pointer;
 }
 
-.section > :nth-child(1) {
+.App > :nth-child(2) > :first-child {
   background-image: url("images/project1.png");
 }
-.content > :nth-child(2) {
+
+.App > :nth-child(2) > :nth-child(2) {
   background-image: url("images/project2.png");
+
 }
-.content > :nth-child(3) {
+.App > :nth-child(2) > :nth-child(3) {
   background-image: url("images/project3.png");
 }
