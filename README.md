@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+----------------------------------------------------------------
+
+## Prompt ##
+Use the following prompt to generate HTML in App.js
+
+Create a simple portfolio site in react. Include three sections. The first section is a header. It includs a title and paragraph. The second section includes 2 sections. Both contain a title and paragraph. The third section includes a contact form. Be sure to keep all sections on one page. 
+
+## Adding CSS ##
+Just copy the css from here: https://github.com/BandaruDheeraj/portfolio1/blob/generic-classes/src/App.css and add it to the "App.css" file. 
+
+## Adding images ##
+Copy the folder from here: https://github.com/BandaruDheeraj/portfolio1/tree/generic-classes/src/images and paste it in your "src" folder. 
